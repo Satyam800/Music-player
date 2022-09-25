@@ -1,0 +1,478 @@
+body{
+  margin: 0px;
+  position: relative;
+  background-color: papayawhip;
+  
+}
+html{
+  overflow-x: hidden ;
+
+}
+html::-webkit-scrollbar {
+    display: none;}
+/*.header{
+  position: relative;
+}*/
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+}
+.music-list__type{
+  background-color: #ffffff;
+}
+
+.header__nav {
+  min-height: 10vh;
+  max-height: 15vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #7FB3D5;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.nav__first-child{
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+}
+.nav__first-child>span,span,input{
+  margin: 1em;
+}
+
+.icon-1{
+  font-size: 1.5em !important;
+}
+ 
+.nav__search{
+  background-color: white;
+            height: 2em;
+            width: 30em;
+            display: flex;
+            flex-direction: row;
+            border-radius: 15px;
+            align-items: center;
+}
+
+
+#search-bar{
+  width: 35em;
+  border-radius: 14px;
+  height: 2.5em;
+     border-color: whitesmoke;
+     padding-left: 1em;
+   
+}
+input[type=text]{
+  outline: none;
+  border-color: whitesmoke;
+  border-width: 0px;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat left;
+
+}
+input[type=text]:focus{
+  
+  background-color: whitesmoke;
+}
+
+.nav__logo img{
+  width: 1em;
+  height: 1em;
+  object-fit:cover;
+  opacity: 0.9; 
+}
+#name{
+            font-size: 1.3em;
+            color: seagreen;
+            font-weight: bolder;  
+            margin-left: 0px;  
+
+        }
+
+ a{
+  color: #34495E ;
+ }
+ .second__child-content{
+    font-size: 1em;
+            color: red;
+            font-weight: bold; 
+ }
+   a:hover{
+    color: darkcyan;
+  }
+  .nav__media-queries{
+    display: none;
+  }
+  select{
+    outline: none;
+    background-color: transparent;
+    border-width: 0px;
+
+  }
+@media screen and (max-width: 1114px)
+{
+  .nav__first-child
+  {
+      display: inline-block;
+  }
+  #search-bar{
+    width: 80%;
+    
+  }
+  .nav__second-child{
+    display: none;
+  }
+  .nav__third-child{
+    display: none;
+  }
+  .nav__media-queries{
+  display: inline;
+  position: absolute;
+  top: 0px;
+  right: 1em;
+
+  }
+/*option[select]{
+  font-weight: bolder;
+  color: #D1F2EB;
+}*/
+}
+
+
+.playlist{
+			display: flex;
+			margin-top: 3em;
+         width: 60vw;
+           overflow-x: hidden;
+		}
+		.playlist__child-1{
+			width: 25em;
+			height: 19em;
+			box-shadow: 0.5em 0.5em 1px solid grey;
+             margin-left: 3em;
+           background-color: red;
+           display: flex;
+         
+		}
+         .playlist__child-1 img{
+         	
+         	width: 25em;
+			height: 19em;
+			
+         }
+         .playlist__child-2{
+         	 	width: 19em;
+			height: 16em;
+			display: flex;
+			flex-direction: column;
+			margin: 2em;
+         }
+         .child2__child-1{
+         	font-weight: bold;
+         	font-family: sans-serif;
+         	font-size: 1.5em;
+         	color: #E7625F;
+         }
+         .playlist__child-2>p{
+         	color: orangered;
+         	font-size: 1.5em;
+         	font-family: sans-serif;
+         	font-weight: bold;
+         }
+         .playlist__child-2 span{
+         	         	color: grey;
+         	font-size: 0.5em;
+         	font-family: sans-serif;
+         	font-weight: bold;
+         }
+          .PlayAll{
+              height:2.9em ;
+              width:8.5em ;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color: #FF0000;
+              color: #ffffff;
+              font-weight: bold;
+              border-width: 0px;
+              margin: 1em;
+          }
+          .icon2{
+          	font-size: 1.2em !important;
+             background-color: transparent;
+             margin: 0.5em;
+             cursor: pointer;
+          }
+          .playlist__child-2 a{
+          	color: grey;
+          	height: 2rem;
+          	width: 2rem;
+          }
+          @media(max-width: 700px){
+          	.child2__child-1{
+          		display: none;
+          	}
+          	
+          	
+          	.playlist{
+          		flex-direction: column;
+          		
+          		justify-content: center;
+          		align-items: center;
+          	
+          }
+      }
+          .catogeries-song{
+          	display: flex;
+          	flex-direction: column;
+          	margin-top: 1em;
+          
+          	
+          }
+          .song-card{
+            width: 55%;
+            height: 3.17em;
+            border-style: solid;
+  border-width: 0.8px 0px; /* 5px top and bottom, 0px on the sides */
+  border-color: darkgrey;
+  /*box-shadow: 0px 1px grey,0px -1px grey;*/
+  display: flex;
+  align-items: flex-start;
+position: relative;
+          }	
+          .play-button{
+          	display: none;
+          	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnH3ai0-OuOnBk0vORdbItAijYyVc9fPlCbg&usqp=CAU');
+			background-size: cover;
+			/*to fit background-image into a box use background-size: contain or cover*/
+			font-size: 0.8em;
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			background-color: transparent;
+			opacity: 0.6;
+		    position: absolute;
+              margin-top: 9px;
+              margin-left: 5px;
+   			height: 3em;
+			width: 3em;
+            cursor: pointer;
+          }
+          .song-card:hover .play-button{
+          	display: block;
+          }
+          .song-card:hover{
+          	background-color: whitesmoke;
+          }
+          .dot-heart{
+          	display: none;
+          	position: absolute;
+          	right: 2em;
+          }
+          .icon2--secondary{
+          	margin-right: 1em;
+          }
+          .song-card:hover .dot-heart {
+             display: block;
+          }
+          .name{
+          	
+          	padding-top: 1em;
+          	margin-left: 2em;
+          	color: grey;
+          	font-size: 1em;
+          	font-weight: bold;
+
+          }
+
+          footer{
+  width:100%;
+  overflow-x: hidden;
+  margin-top: 1em;
+}
+
+  .footer__child-1{
+    height: 13em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,whitesmoke ,#ffffff);
+ 
+  }
+
+  .footer__child-1>div{
+    font-weight:450;
+    font-size: 1.2em;
+    font-family: cursive;
+    
+    color: #5F9EA0;}
+
+  @media screen and (max-width: 1100px)
+  {
+     .footer__child-1>div{
+      font-size: 0.4em;
+     }
+     .footer__child-1{
+      width: 98vw;
+      height: 6em;
+      
+     }
+
+
+  }
+
+    .footer__child-2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 8em;
+    }
+    .footer__child-2 a{
+      color: #FFCCCC;
+
+    }
+    /*fonta awesome icon increase by giving class name and apply property on them by font-size*/
+    .icon{
+      font-size: 2.4em !important; 
+      margin: 0.5em;    
+    }
+    .footer__child-3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .footer__child-3>span{
+      margin: 0.5em;
+
+
+    }
+    .footer__child-3 a{
+      text-decoration: none;
+      /*remove underline from link*/
+      color: orangered;
+    }
+    aside{
+  
+}
+.queue-list{
+ 
+ position: absolute;
+ top: 3em;
+ right: 0px;
+ width:40vw ;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: #301934;
+overflow-y: scroll;
+overflow-x: hidden;
+ 
+}
+.queue-list>span{
+  color: #fffff;
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+
+}
+.song-card--secondary{
+  width: 40vw !important;
+}
+/*three dot content*/
+.item-content{
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  height: 20em;
+  width: 15em;
+  border-radius: 12px;
+  overflow-y: scroll;
+
+
+}
+
+
+.item-content span{
+  color: darkgray;
+  font-size: 1.3em;
+  font-weight: bolder;
+  font-family: cursive;
+}
+/*.playlist__child-1-screen{
+    display: none;
+    display: flex;
+    position: relative;
+    top: 2em;
+  }
+  .playlist__child-1-screen img{
+    object-fit: contain;
+    height: 40vh;
+    width: 75vw;
+  }*/
+@media(max-width: 850px){
+  .queue-list{
+    display: none;
+  }
+  .playlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .playlist__child-1{
+display: none;
+
+  }
+
+  .playlist__child-2{
+    position: relative;
+    left: 2.2em;
+
+  }
+}
+
+
+.song-card{
+  position: relative;
+}
+.pop-up{
+  display: none;
+  position: absolute;
+  left: 300px;
+  top: 45px;
+  z-index: 2;
+}
+
+    }
+    .audio-control{
+    
+      width: 100%;
+      height: 10em;
+      flex-direction: row;
+      background-color: wheat;
+      align-items: center;
+      justify-content: space-around;
+      background-color: blue;
+    }
+    .audio-control>div{
+      height: 2em;
+      width: 10em;
+      background-color: red;
+      margin: 1em;
+       flex-direction: row;
+    }
+  
+    .showup{
+      display: none;
+   
+    }
+    
+

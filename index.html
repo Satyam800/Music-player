@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="logo-website">Skew Player</title>
+</head>
+<body>
+
+	<!--upper code-- sidebar hide content appear on three dash -->
+
+	<header class="header">
+	
+		<nav class="header__nav">
+			<div class="sidebar-parent">
+	
+<div class="sidebar">
+	<div><a onclick="showHide()"><i class="fa-regular fa-user icon3"></i>
+		<span>Login/Logout</span></a></div>
+	<div><a href="#">Radio</a></div>
+	<div><a href="#">Podcast</a></div>
+	<div><a href="#">My music</a></div>
+	<div>Language
+		<div><a href="#">Select</a></div>
+	</div>
+	<div>
+		Night Mode
+		
+	</div>
+	<hr>
+	<div><a href="#">Trending song</a></div>
+	<div><a href="#">New song</a></div>
+	<div><a href="#">Album</a></div>
+	<div><a href="#">Artist</a></div>
+	
+</div>
+
+</div>
+			<div class="nav__first-child">
+				<span><a onclick="showHide()" ><i class="fa-solid fa-bars icon-1"></span></a></i>
+				 <span class="nav__logo"><img src="https://payload.cargocollective.com/1/0/21463/2980319/skew-logo-branding-1ab-excites.png"><span id="name">skew palyer</span></span>
+                  
+				    <input type="text" id="search-bar" placeholder=" Search artist,song,album ">
+			</div>
+
+			<div class="nav__second-child">
+				<span class="second__child-content"><a href="#">Premium</a></span>
+				<span class="second__child-content"><a href="#">Support</a></span>
+				
+			</div>
+
+			<div class="nav__third-child"> <span class="nav__language"><a href="#"><i class="fa-solid fa-link icon-1"></i></a></span>
+    <a href="#"><i class="fa-regular fa-moon icon-1"></i></a>
+       <span class="nav__authentication"><a href="#">Login/Signup</a></span></div>
+
+       <span class="nav__media-queries">
+       	<form>
+       		<select id="lang" name="lang">
+       	<option>English/Hindi</option>
+       	<option>Hindi</option>
+   
+       </select>
+   </form>
+</span>
+			
+		</nav>
+	
+
+	
+        <div class="content__music-list">
+    <div class="music-list__type">
+        <span> <a href="#">All music</a></span>
+        <span> <a href="#">Trending song</a></span>
+        <span> <a href="#">New song</a></span>
+        <span>
+            <form id="song-type"> 
+                <select id="genre" name="genre"> value="one"
+                    <option value="one">Moods&Genres</option>
+                    <option value="two">Party</option>
+                    <option value="three">Romance</option>
+                    <option value="four">Bhakti</option>
+                    <option value="five">90s and 2000s</option>
+                    <option value="six">Indie</option>
+                    <option value="seven">EDM</option>
+                </select>
+            </form>
+        </span>
+        <span> <a href="#">Old song</a></span>
+        <span> <a href="#">Album</a></span>
+        <span> <a href="#">Radio</a></span>
+        <span> <a href="#">Podcast</a></span>
+        
+    </div>
+    </div>
+    
+
+</header>
+
+
+<content>
+
+       <div class="slideshow__images">
+        <img class="slides sliderImage">
+        <!-- <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/XYybzrb2gz/Yybzzoob2g/size_l_1658125695.webp">
+        <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/81l3Me3rMx/1l3MZnPWrM/size_l_1651060182.webp">
+        <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+        <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/XzVWRLKdqR/zVWRJ71Wdq/size_l_1658294455.webp">
+        <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/81l3Me3rMx/1l3MZnPWrM/size_l_1651060182.webp">
+        <img class="slides" src="https://a10.gaanacdn.com/gn_img/showcase/0wrb4qNKLg/wrb4AeMKLg/size_l_1661517717.webp"> -->
+
+        <a class="slideshow arrow-right" onclick="increaseSlide()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaHb5ndPuBv_bGlsF_8cthRAQxcklQKqfxQ&usqp=CAU"></a>
+       <a class="slideshow arrow-left" onclick="decreaseSlide()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwFYGl859TlHkUrVFmrAvNWAOtPby6ZgWMg&usqp=CAU"></a>
+
+
+           
+       </div>
+
+       <div class="slideshow__images_screen-view">
+       
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/XYybzrb2gz/Yybzzoob2g/size_l_1658125695.webp">
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/81l3Me3rMx/1l3MZnPWrM/size_l_1651060182.webp">
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/XzVWRLKdqR/zVWRJ71Wdq/size_l_1658294455.webp">
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/81l3Me3rMx/1l3MZnPWrM/size_l_1651060182.webp">
+        <img class="slides-screen-view" src="https://a10.gaanacdn.com/gn_img/showcase/0wrb4qNKLg/wrb4AeMKLg/size_l_1661517717.webp">
+    </div>
+   
+    </content>
+
+    <main>
+
+      <div class="catogery name">Trendind song</div>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list1">
+      <!-- <a class="button right" onclick="inSlide1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaHb5ndPuBv_bGlsF_8cthRAQxcklQKqfxQ&usqp=CAU"></a>
+
+       <a class="button left" onclick="decSlide1()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwFYGl859TlHkUrVFmrAvNWAOtPby6ZgWMg&usqp=CAU"></a> -->
+
+    <div class="main__catogery-1">
+        <div class="card title-1 "><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp"></a>
+        	<span class="song-name">Title-name</span></div>
+        <div class="card title-2"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/ZaP37RKDy7/P37OlNeX3D/size_m.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-3"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/BZgWoQOK2d/gWoQPkV7K2/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-4"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/Bp1bAnK029/1bAyNrxjb0/size_m_1620184840.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-5"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/81l3Mye3rM/l3MyEAyG3r/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-6"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/EWlwzBwm3z/size_m.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-7"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/9MAWe97WyJ/AWe9RA8qWy/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-8"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/zLp36v3rGe/p36PloZmbr/size_m_1616002409.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-9"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/w4MKPgOboj/MKPg1dJjbo/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-10"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqgo3yQ/9bqgZ8xM3y/size_m.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-11"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/albums/YoEWlwa3zX/EWlwLE5y3z/size_m.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-12"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/song/Dk9KNk23Bx/9KNQzo1obB/size_m_1613717405.webp"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-13"><a href="song-list-component.html"><span class="play-button"></span><img class="main-slider" src="https://a10.gaanacdn.com/gn_img/song/0wrb4qNKLg/rb48Br9VbL/size_m_1613976995.webp"></a><span class="song-name">Title-name</span></div>
+     
+    </div>
+</div>
+
+
+        <span class="catogery name">New Releases</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+
+    <div class="list2">
+ 
+     <!--  <a class="button right1" onclick="leftscroll()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaHb5ndPuBv_bGlsF_8cthRAQxcklQKqfxQ&usqp=CAU"></a>
+
+       <a class="button left1" onclick="rightscroll()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwFYGl859TlHkUrVFmrAvNWAOtPby6ZgWMg&usqp=CAU"></a> -->
+
+    <div class="main__catogery-2">
+        <div class="card title-14"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/81l3Me3rMx/l3My9YAG3r/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-15"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/01A3mar3NQ/A3maY2D53N/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-16"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/9MAWe7KyJe/AWe9NdjDWy/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-17"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/9MAWe7KyJe/AWe9NdjDWy/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-18"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/q3ZREvVN35/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-19"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/oAJbDElKnL/JbDERBZmKn/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-20"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/a7LWBaz3zX/LWBk7aY4bz/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-21"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0Mbo5e/NW0JMEq5Ko/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-22"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/4WEk9raGKP/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-23"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/w4MKPDOKoj/MKPg9oxjbo/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-24"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/6Zxb2r7b9w/xb2r9xjOb9/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-25"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/21GWwR3pkg/GWwr8yqp3p/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-26"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/zLp36v3rGe/p36PQDDRbr/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-27"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/6Zxb2r7b9w/xb2r9xjOb9/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+        <div class="card title-28"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/qK5p9gyVbw/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+
+</div>
+
+    </div>
+    <span class="catogery name">Top Searched Artists</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list3">
+      	<div class="main__catogery-3">
+      		<div class="card title-29"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/zLp36v3rGe/Lp36mQk0Kr/size_m_1652464449.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-30"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/XYybzrb2gz/ybzzGEQ8b2/size_m_1657700451.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-31"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/D0PKLqr3Gl/0PKLjDk6WG/size_m_1655962311.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-32"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/9En3pqeWXD/n3pkoxO6KX/size_m_1652985105.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-33"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/ZaP374RWDy/P37oYngR3D/size_m_1657699233.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-34"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/dwN39y83DP/N392Zrz5WD/size_m_1646726259.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-35"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/4Z9bqZoKyQ/9bqqJeOPby/size_m_1652464349.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-36"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/BZgWoOW2d9/gWor8e4532/size_m_1657698603.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-37"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qa4WEkqKP1/4WEgqZkxKP/size_m_1653676066.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-38"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/jBr3gybR1m/Br3gQB4NbR/size_m_1652464418.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-39"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/VdNW0JMKo5/NW0xOxrOWo/size_m_1570437416.jpg"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-40"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/zLp36PvbrG/p36V1R6R3r/size_m_1652464362.jpg"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-41"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/jBr3gybR1m/Br3gQB4NbR/size_m_1652464418.webp"></a><span class="song-name">Title-name</span></div>
+      		
+      	</div>
+      	
+      </div>
+<!-- for creating a scroll you need a parent container to apply scroll property and its content starting overflow then scroll will work 
+to hide scroll used .classname::-webkit-scrollbar {
+    display: none;}-->
+    <span class="catogery name">Top charts</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+
+
+      <div class="list4">
+
+      	<div class="main__catogery-4">
+      		<div class="card title-42"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/P7m3GNKqxo/7m3GQwOybq/size_m_1658563047.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-43"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/w4MKPgOboj/4MKP2xArWo/size_m_1658215128.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-44"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/oAJbDElKnL/JbDEDR0lKn/size_m_1659709829.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-45"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/zLp36v3rGe/Lp36kP5NWr/size_m_1658563306.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-46"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/0wrb4kNWLg/rb4qAqpLKL/size_m_1656391385.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-47"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/01A3mrWNQX/A3mO66mzbN/size_m_1657261138.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-48"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/kGxbn03y4r/xbnwx1L1Ky/size_m_1656391455.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-49"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/10q3Zj1352/q3Z5PPXnK5/size_m_1657259792.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-50"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/2lV3dl13Rg/V3dlGl1O3R/size_m_1636797679.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-51"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/jBr3gybR1m/r3gmPRNybR/size_m_1656681543.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-52"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/7rVW1aRWk5/VW1Q4oQOWk/size_m_1657176910.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-53"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/YoEWlwa3zX/EWlwZMZQ3z/size_m_1636699641.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-54"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/z8k3yd1Krx/k3yMaGGP3r/size_m_1657281729.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-55"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/DwPKOxB3qV/PKOr5Pkzbq/size_m_1657261225.webp"></a><span class="song-name">Title-name</span></div>
+      		
+      	</div>
+      	
+      </div>
+
+        <span class="catogery name">Popular in hindi</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list5">
+      	<div class="main__catogery-5">
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/YoEWlwa3zX/EWlmODGmbz/size_m_1595848381.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/21GWwR3pkg/GWwBLwrD3p/size_m_1629370808.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xP3gVY/d3xzDvwQbg/size_m.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/Bp1bAynb02/1bADxownW0/size_m_1543830076.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/lJvKa56KDV/vKa91Z1RKD/size_m_1628085090.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/7rVW1Rbk56/VW1L7Rxg3k/size_m_1628958702.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></a></span><img src="https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/V3dldLBE3R/size_m.webp"><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/4Z9bqo3yQn/9bqje5jXKy/size_m_1614769974.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0JMKo5/dNW0v1jpKo/size_m.webp"><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/song/XYybzNrb2g/ybzEg61rW2/size_m_1628084846.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0JMKo5/NW0JxV5wKo/size_m.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqgo3yQ/Z9bqAEQeby/size_m_1605590246.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqo3yQn/9bqgDyrX3y/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-56"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/ogNWkDbmXJ/gNWkJmgk3m/size_m_1601267732.webp"></a><span class="song-name">Title-name</span></div>
+
+      		
+      	</div>
+      	
+      </div>
+
+      <span class="catogery name">Popular in hindi</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list6">
+      	<div class="main__catogery-6">
+      		<div class="card title-57"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/XzVWRLKdqR/zVWRmox63d/size_m_1651817019.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-58"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/Bp1bAnK029/1bAwqpP430/size_m_1657196399.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-59"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/lJvKa56KDV/vKaRjXN63D/size_m_1656314269.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-60"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/9En3peWXDV/En3poxMEKX/size_m_1655098902.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-61"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qaLKY623pO/LKYgXg2aWp/size_m_1657191493.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-62"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qa4WEkqKP1/4WE5EO18WP/size_m_1656392719.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-63"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/DwPKOxB3qV/PKOk0wZaKq/size_m_1635224999.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-64"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qa4WEqqWP1/4WEm8oRMWP/size_m_1657194296.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-65"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/JD2KJyAbOL/2KJyyL4ObO/size_m_1651650666.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-66"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/Rz4W8vKxD5/4W8eeEVLbx/size_m_1620034729.webp"></a><span class="song-name">Title-name</span></div>
+
+      		
+      	</div>
+      	
+      </div>
+       <span class="catogery name">Featured Artist</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list7">
+      	<div class=" artist">
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/zLp36PvbrG/Lp36AR0KrG/size_m_1516707336.webp"></a></div>
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/Dk9KNk23Bx/k9KNqJJbBx/size_m_1638898900.webp"></a></div>
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/9MAWe7KyJe/MAWe9lBGWy/size_m_1516185303.webp"></a></div>
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/6Zxb2r7b9w/Zxb2xp0w39/size_m.jpg"></a></div>
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/Dk9KNk23Bx/k9KNgP763B/size_m_1595857138.webp"></a></div>
+      		<div class=" card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/Rz4W87v3xD/Rz4W8ppWxD/size_m_1638817418.webp"></a></div>
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/21GWwrR3pk/1GWwYz4DKp/size_m_1567610470.webp"></a></div>
+      		
+      		<div class="card2 artist-name1"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/artists/w4MKPObojg/w4MKPObojg/size_m_1516799177.webp"></a></div>
+      		
+      		
+      	</div>
+      </div>
+      <br>
+
+     
+      <span class="catogery name"> Song Recommends</span>
+      <span class="collection see-all"><a href="#">See All</a></span>
+      <div class="list8">
+      	<div class="main__catogery-7">
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/z8k3yd1Krx/k3yqp9863r/size_m_1655555618.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/MmqK5EKwRO/qK5XdE2obw/size_m_1657300870.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/NOXWVgbkqL/XWVMVEeR3k/size_m_1621415476.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/lJvKa63DV9/JvKa7dl2WD/size_m_1515071495.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/JD2KJyAbOL/D2KJqE9lbO/size_m_1637644822.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/JD2KJyAbOL/D2KJqE9lbO/size_m_1637644822.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/01A3mar3NQ/A3mOzpkdbN/size_m_1641351758.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_img/albums/R7vKXr6Wmr/vKX6RROQWm/size_m.jpg"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qaLKY23pO4/LKYD2Ejpbp/size_m_1654084745.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/oAJbDlbnL8/JbD7mmxqWn/size_m_1644323183.webp"></a><span class="song-name">Title-name</span></div>
+      		<div class="card title-67"><a href="song-list-component.html"><span class="play-button"></span><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/9MAWe7KyJe/MAWeeV05Wy/size_m_1654091771.webp"></a><span class="song-name">Title-name</span></div>
+      		
+      	</div>
+      	
+      </div>
+
+      <footer>
+      	<div class="footer__child-1">
+      		<div>Let's Enjoy Music whenever feel alone, it is virtual freind that gives relax to the mind </div>
+      	</div>
+      	<div class="footer__child-2">
+      		<a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+      		<a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+      		<a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+      		
+      	</div>
+
+      	<hr>
+      	<div class="footer__child-3">
+      		<span><a href="#">Terms of Use</a></span>
+      		<span><a href="#">About us</a></span>
+      		<span><a href="#">Privacy Policy</a></span>
+      		<span><a href="#">FAQ</a></span>
+      	</div>
+      	<hr>
+
+      </footer>
+
+
+  </main>
+
+
+	
+	<script id="script1" type="text/javascript" src="index.js"></script>
+</body>
+</html>

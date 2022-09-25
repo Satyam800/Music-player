@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="song-list-component.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<header class="header">
+	
+		<nav class="header__nav">
+			<div class="nav__first-child">
+				<span><a href="#"><i class="fa-solid fa-bars icon-1"></span></a></i>
+				 <span class="nav__logo"><img src="https://payload.cargocollective.com/1/0/21463/2980319/skew-logo-branding-1ab-excites.png"><span id="name">skew palyer</span></span>
+                  
+				    <input type="text" id="search-bar" placeholder=" Search artist,song,album ">
+			</div>
+
+			<div class="nav__second-child">
+				<span class="second__child-content"><a href="#">Premium</a></span>
+				<span class="second__child-content"><a href="#">Support</a></span>
+				
+			</div>
+
+			<div class="nav__third-child"> <span class="nav__language"><a href="#"><i class="fa-solid fa-link icon-1"></i></a></span>
+    <a href="#"><i class="fa-regular fa-moon icon-1"></i></a>
+       <span class="nav__authentication"><a href="#">Login/Signup</a></span></div>
+
+       <span class="nav__media-queries">
+       	<form>
+       		<select id="lang" name="lang">
+       	<option>English/Hindi</option>
+       	<option>Hindi</option>
+   
+       </select>
+   </form>
+</span>
+			
+		</nav>
+	
+
+	
+
+    
+
+</header>
+<div class="playlist">
+
+	<div class="playlist__child-1"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb">
+		
+	</div>
+
+	<div class="playlist__child-2">
+		<div class="child2__child-1">
+			<p>Heartbreak Hits Songs</p>
+		<p>Hindi Sad Songs</p>
+		<span>No. track
+				<p>Plalist created by skew player</p>		
+		</span>
+		</div>
+		<div class="child2__child-2">
+		<button class="PlayAll button--1">Play All</button>
+
+		<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2"></i></a>
+		<a class="three-dot" onclick="showPopup()"><i class="fa-solid fa-ellipsis icon2"></i></a>
+
+		<div class="pop-up">
+		<div class="three-dot-list">
+     	 <div class="item-content">
+     	 	<span>Download</span>
+     	 	<span>Add to queue</span>
+     	 	<span>Audio quality</span>
+     	 	<span>Add to favorite</span>
+     	 	<span>Song information</span>
+     	 	<span>Share</span>
+     	 	<span>View Artrist</span>
+     	 	<span>View artist</span>
+
+      	
+      </div>
+     </div>
+	</div>
+		</div>
+</div>
+</div>
+
+
+
+<audio class="showup" controls autoplay loop muted preload>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+<div class="catogeries-song">
+	<div class="song-card " onclick="show()">
+		
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="showPopup()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+		 
+
+<div class="pop-up">
+		<div class="three-dot-list">
+     	 <div class="item-content">
+     	 	<span>Download</span>
+     	 	<span>Add to queue</span>
+     	 	<span>Audio quality</span>
+     	 	<span>Add to favorite</span>
+     	 	<span>Song information</span>
+     	 	<span>Share</span>
+     	 	<span>View Artrist</span>
+     	 	<span>View artist</span>
+
+      	
+      </div>
+     </div>
+	</div>
+
+	
+	</div>
+
+	<audio class="showup" controls autoplay loop muted preload>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+	<div class="song-card" onclick="show()" >
+		<span onclick="audio()" class="play-button"></span>
+	
+			<img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEkqKP1/4WEk6BqVKP/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+
+		     </span>
+	</div>
+
+
+<audio class="showup" controls autoplay loop muted preload>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+	<div class="song-card" onclick="show()">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/NOXWVRgWkq/OXWV47RRKk/size_xs.webp">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+
+<audio class="showup" controls autoplay loop muted preload>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+	<div class="song-card" onclick="show()">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/song/7rVW1aRWk5/VW1epL5RWk/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/D0PKLrWGl9/PKLqRkZ43G/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/song/VdNW0JMKo5/NW05jOOpbo/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/JD2KJyAbOL/D2KJqGvAbO/size_xs.webp">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/song/0wrb4N3Lg7/rb4ed0PNKL/size_xs.webp">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/DwPKOBbqVZ/PKOx9oo63q/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/7rVW1aRWk5/VW1aEGejWk/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+		
+</div>
+<!-- music audio control box -->
+<div class="audio_control">
+	<div class="audio-control-child-1">
+		
+	</div>
+	<div class="audio-control-child-2">
+		
+	</div class="audio-control-child-3">
+	<div>
+		
+	</div>
+	
+</div>
+
+
+ <footer>
+      	<div class="footer__child-1">
+      		<div>Let's Enjoy Music whenever feel alone, it is virtual freind that gives relax to the mind </div>
+      	</div>
+      	<div class="footer__child-2">
+      		<a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+      		<a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+      		<a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+      		
+      	</div>
+
+      	<hr>
+      	<div class="footer__child-3">
+      		<span><a href="#">Terms of Use</a></span>
+      		<span><a href="#">About us</a></span>
+      		<span><a href="#">Privacy Policy</a></span>
+      		<span><a href="#">FAQ</a></span>
+      	</div>
+      	<hr>
+
+      </footer>
+      <aside>
+      	<div class="queue-list">
+	<span>Queue</span>
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<a class="three-dot" onclick="item()"><i class="fa-solid fa-ellipsis icon2 icon2--secondary"></i></a>
+		     </span>
+	</div>
+
+	<div class="song-card song-card--secondary">
+		<span class="play-button"></span>
+
+			<img src="https://a10.gaanacdn.com/gn_img/albums/kGxbnw0Ky4/xbnwoP61Ky/size_xs.jpg">
+			<div class="song name">Song name</div>
+			<div class="album name">Album name</div>
+		     <span class="dot-heart">
+		     	<a class="heart" onclick="like()"><i class="fa-regular fa-heart icon2 icon2--secondary"></i></a>
+		<i  onclick="item()" class="three-dot" class="fa-solid fa-ellipsis icon2 icon2--secondary"></i>
+		     </span>
+	</div>
+
+
+</div>
+      
+     
+     
+<script type="text/javascript" src="song-list-component.js"></script>
+</body>
+</html>
